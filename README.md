@@ -19,12 +19,6 @@ CloudStream için Türkçe eklentiler
 ### 🎁 Teşekkürler
 
 • [recloudstream/cloudstream](https://github.com/recloudstream/cloudstream)
-• [keyiflerolsun/Kekik-cloudstream](https://github.com/keyiflerolsun/Kekik-cloudstream)
-
-## 🌐 Telif Hakkı ve Lisans
-
-• Copyright (C) 2025 by [ardac](https://github.com/ardac) ❤️️
-• [GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007](https://github.com/ardac/ardacrepo/blob/master/LICENSE) Koşullarına göre lisanslanmıştır..
 
 ## ♻️ İletişim
 
