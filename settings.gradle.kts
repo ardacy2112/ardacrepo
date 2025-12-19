@@ -8,5 +8,7 @@ pluginManagement {
 
 rootProject.name = "ardacrepo"
 
+include("HDFilmCehennemi", "SelcukFlix")
+
 include(":HDFilmCehennemi")
 include(":SelcukFlix")
