@@ -1,0 +1,32 @@
+[
+    {
+        "iconUrl": "https://www.google.com/s2/favicons?domain=hdfilmcehennemi.com&sz=%size%",
+        "apiVersion": 1,
+        "repositoryUrl": "https://github.com/ardac/ardacrepo",
+        "fileSize": 19343,
+        "status": 1,
+        "language": "tr",
+        "authors": ["ardac"],
+        "tvTypes": ["Movie", "TvSeries"],
+        "version": 1,
+        "internalName": "HDFilmCehennemi",
+        "description": "Türkiye'nin en hızlı hd film izleme sitesi",
+        "url": "https://raw.githubusercontent.com/ardac/ardacrepo/master/HDFilmCehennemi/build/outputs/apk/release/HDFilmCehennemi-release.apk",
+        "name": "HDFilmCehennemi"
+    },
+    {
+        "iconUrl": "https://www.google.com/s2/favicons?domain=selcukflix.com&sz=%size%",
+        "apiVersion": 1,
+        "repositoryUrl": "https://github.com/ardac/ardacrepo",
+        "fileSize": 19343,
+        "status": 1,
+        "language": "tr",
+        "authors": ["ardac"],
+        "tvTypes": ["Movie", "TvSeries"],
+        "version": 1,
+        "internalName": "SelcukFlix",
+        "description": "SelcukFlix film ve dizi izleme sitesi",
+        "url": "https://raw.githubusercontent.com/ardac/ardacrepo/master/SelcukFlix/build/outputs/apk/release/SelcukFlix-release.apk",
+        "name": "SelcukFlix"
+    }
+]
