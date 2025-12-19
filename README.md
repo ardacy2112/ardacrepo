@@ -1,20 +1,20 @@
 # ☁️ CloudStream için ArdaC Repo
 
-[![Boyut](https://img.shields.io/github/repo-size/ardac/ardacrepo?logo=git&logoColor=white&label=Boyut)](#)
-[![Görüntülenme](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/ardac/ardacrepo&title=Görüntülenme)](#)
+[![Boyut](https://img.shields.io/github/repo-size/ardacy2112/ardacrepo?logo=git&logoColor=white&label=Boyut)](#)
+[![Görüntülenme](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/ardacy2112/ardacrepo&title=Görüntülenme)](#)
 
 CloudStream için Türkçe eklentiler
 
 ## 💾 Kurulum
 
 1. [cloudstream/pre-release](https://github.com/recloudstream/cloudstream/releases/tag/pre-release) Adresinden güncel APK dosyasını indirip kurun.
-2. Uygulamanın yüklü olduğu cihazda [depoyu otomatik yüklemek için tıklayın](https://keyiflerolsun.me/http-protocol-redirector?r=cloudstreamrepo://raw.githubusercontent.com/ardac/ardacrepo/master/repo.json)
+2. Uygulamanın yüklü olduğu cihazda [depoyu otomatik yüklemek için tıklayın](https://keyiflerolsun.me/http-protocol-redirector?r=cloudstreamrepo://raw.githubusercontent.com/ardacy2112/ardacrepo/master/repo.json)
    ◦ veya
    ◦ `Depo ekle` butonuyla manuel ekleme yapmak isteyen arkadaşlar için `ardacrepo` kısa kodu mevcuttur. `Depo ismi` kısmını boş bırakarak `Depo URL'si` kısmına `ardacrepo` yazarak `Depo ekle` demeniz yeterli..
 
 ## 📱 Repo İçeriği
 
-[Repo](https://raw.githubusercontent.com/ardac/ardacrepo/master/repo.json)
+[Repo](https://raw.githubusercontent.com/ardacy2112/ardacrepo/master/repo.json)
 
 ### 🎁 Teşekkürler
 

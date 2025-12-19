@@ -42,7 +42,7 @@ subprojects {
     }
 
     android {
-        namespace = "com.keyiflerolsun"
+        namespace = "com.ardacrepo"
 
         defaultConfig {
             minSdk = 21

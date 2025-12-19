@@ -3,6 +3,6 @@
     "description": "CloudStream eklentileri",
     "manifestVersion": 1,
     "pluginLists": [
-        "https://raw.githubusercontent.com/ardac/ardacrepo/master/plugins.json"
+        "https://raw.githubusercontent.com/ardacy2112/ardacrepo/master/plugins.json"
     ]
 }
