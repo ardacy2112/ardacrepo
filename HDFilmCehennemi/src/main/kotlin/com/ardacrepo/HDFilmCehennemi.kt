@@ -131,6 +131,7 @@ class HDFilmCehennemi : MainAPI() {
             newExtractorLink(
                 source,
                 base64Decode(videoData),
+                "${mainUrl}/",
                 Qualities.Unknown.value,
                 ExtractorLinkType.VIDEO
             )
