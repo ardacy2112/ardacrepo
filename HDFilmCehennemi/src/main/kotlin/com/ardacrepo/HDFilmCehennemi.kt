@@ -122,7 +122,7 @@ class HDFilmCehennemi : MainAPI() {
                 this.year            = year
                 this.plot            = description
                 this.tags            = tags
-                this.score           = scoreValue?.let { Score(it) }
+                this.score           = scoreValue
                 this.recommendations = recommendations
                 addActors(actors)
                 addTrailer(trailer)
@@ -135,7 +135,7 @@ class HDFilmCehennemi : MainAPI() {
                 this.year            = year
                 this.plot            = description
                 this.tags            = tags
-                this.score           = scoreValue?.let { Score(it) }
+                this.score           = scoreValue
                 this.recommendations = recommendations
                 addActors(actors)
                 addTrailer(trailer)
@@ -155,7 +155,7 @@ class HDFilmCehennemi : MainAPI() {
                 url     = base64Decode(videoData),
                 referer = "${mainUrl}/",
                 quality = Qualities.Unknown.value,
-                type    = ExtractorLinkType.VIDEO
+                isM3u8 = false
             )
         )
 
