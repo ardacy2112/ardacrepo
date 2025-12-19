@@ -149,13 +149,13 @@ class HDFilmCehennemi : MainAPI() {
         val subData   = script.substringAfter("tracks: [").substringBefore("]")
 
         callback.invoke(
-            ExtractorLink(
+            newExtractorLink(
                 source  = source,
                 name    = source,
                 url     = base64Decode(videoData),
                 referer = "${mainUrl}/",
                 quality = Qualities.Unknown.value,
-                isM3u8 = false
+                type    = ExtractorLinkType.VIDEO
             )
         )
 
