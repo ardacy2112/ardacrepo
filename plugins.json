@@ -3,7 +3,6 @@
         "iconUrl": "https://www.google.com/s2/favicons?domain=hdfilmcehennemi.com&sz=%size%",
         "apiVersion": 1,
         "repositoryUrl": "https://github.com/ardacy2112/ardacrepo",
-        "fileSize": 19343,
         "status": 1,
         "language": "tr",
         "authors": ["ardac"],
@@ -11,14 +10,13 @@
         "version": 1,
         "internalName": "HDFilmCehennemi",
         "description": "Türkiye'nin en hızlı hd film izleme sitesi",
-        "url": "https://raw.githubusercontent.com/ardacy2112/ardacrepo/main/HDFilmCehennemi/build/outputs/apk/release/HDFilmCehennemi-release.apk",
+        "url": "https://raw.githubusercontent.com/ardacy2112/ardacrepo/main/HDFilmCehennemi/",
         "name": "HDFilmCehennemi"
     },
     {
         "iconUrl": "https://www.google.com/s2/favicons?domain=selcukflix.com&sz=%size%",
         "apiVersion": 1,
         "repositoryUrl": "https://github.com/ardacy2112/ardacrepo",
-        "fileSize": 19343,
         "status": 1,
         "language": "tr",
         "authors": ["ardac"],
@@ -26,7 +24,7 @@
         "version": 1,
         "internalName": "SelcukFlix",
         "description": "SelcukFlix film ve dizi izleme sitesi",
-        "url": "https://raw.githubusercontent.com/ardacy2112/ardacrepo/main/SelcukFlix/build/outputs/apk/release/SelcukFlix-release.apk",
+        "url": "https://raw.githubusercontent.com/ardacy2112/ardacrepo/main/SelcukFlix/",
         "name": "SelcukFlix"
     }
 ]
