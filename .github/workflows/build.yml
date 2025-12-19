@@ -4,13 +4,17 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    - uses: actions/setup-java@v1
+    - uses: actions/checkout@v4
+    - uses: actions/setup-java@v4
       with:
         java-version: 17
+        distribution: 'temurin'
+    - name: Setup Gradle
+      uses: gradle/actions/setup-gradle@v3
     - run: chmod +x gradlew
     - run: ./gradlew build
-    - uses: actions/upload-artifact@v2
+    - name: Upload APKs
+      uses: actions/upload-artifact@v4
       with:
         name: apks
         path: '**/build/outputs/apk/release/*.apk'
