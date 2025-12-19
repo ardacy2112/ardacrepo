@@ -87,7 +87,7 @@ class SelcukFlix : MainAPI() {
         val year        = document.selectFirst("div.post-info-year-country a")?.text()?.trim()?.toIntOrNull()
         val tvType      = if (document.select("div.seasons").isEmpty()) TvType.Movie else TvType.TvSeries
         val description = document.selectFirst("article.post-info-content > p")?.text()?.trim()
-        val rating      = document.selectFirst("div.post-info-imdb-rating span")?.text()?.substringBefore("(")?.trim()?.toRatingInt()
+        val scoreValue  = document.selectFirst("div.post-info-imdb-rating span")?.text()?.substringBefore("(")?.trim()?.toDoubleOrNull()
         val actors      = document.select("div.post-info-cast a").map {
             Actor(it.selectFirst("strong")!!.text(), it.select("img").attr("data-src"))
         }
@@ -122,7 +122,7 @@ class SelcukFlix : MainAPI() {
                 this.year            = year
                 this.plot            = description
                 this.tags            = tags
-                this.rating          = rating
+                this.score           = scoreValue
                 this.recommendations = recommendations
                 addActors(actors)
                 addTrailer(trailer)
@@ -135,7 +135,7 @@ class SelcukFlix : MainAPI() {
                 this.year            = year
                 this.plot            = description
                 this.tags            = tags
-                this.rating          = rating
+                this.score           = scoreValue
                 this.recommendations = recommendations
                 addActors(actors)
                 addTrailer(trailer)
@@ -150,12 +150,10 @@ class SelcukFlix : MainAPI() {
 
         callback.invoke(
             newExtractorLink(
-                source  = source,
-                name    = source,
-                url     = base64Decode(videoData),
-                referer = "${mainUrl}/",
-                quality = Qualities.Unknown.value,
-                type    = ExtractorLinkType.VIDEO
+                source,
+                base64Decode(videoData),
+                Qualities.Unknown.value,
+                ExtractorLinkType.VIDEO
             )
         )
 
