@@ -30,7 +30,7 @@ class HDFilmCehennemi : MainAPI() {
             }
             HomePageList(title, items)
         }
-        return newHomePageResponse(categories)
+        return HomePageResponse(categories)
     }
 
     override suspend fun quickSearch(query: String): List<SearchResponse> = search(query)
@@ -101,7 +101,7 @@ class HDFilmCehennemi : MainAPI() {
                 this.year = year
                 this.plot = description
                 this.tags = tags
-                this.score = Score(scoreValue ?: 0.0)
+                this.score = scoreValue
                 this.recommendations = recommendations
                 addActors(actors)
                 addTrailer(trailer)
@@ -114,7 +114,7 @@ class HDFilmCehennemi : MainAPI() {
                 this.year = year
                 this.plot = description
                 this.tags = tags
-                this.score = Score(scoreValue ?: 0.0)
+                this.score = scoreValue
                 this.recommendations = recommendations
                 addActors(actors)
                 addTrailer(trailer)
@@ -131,10 +131,8 @@ class HDFilmCehennemi : MainAPI() {
             source,
             base64Decode(videoData),
             "${mainUrl}/",
-            ExtractorLinkType.VIDEO,
-            Qualities.Unknown.value,
-            callback
-        )
+            ExtractorLinkType.VIDEO
+        ) { callback.invoke(this) }
 
         AppUtils.tryParseJson<List<SubSource>>("[${subData}]")?.filter { it.kind == "captions" }?.map {
             subtitleCallback.invoke(
